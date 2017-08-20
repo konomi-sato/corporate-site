@@ -1,0 +1,62 @@
+/*
+Error: Invalid CSS after "...    width: 100%": expected "{", was ";"
+        on line 346 of sample.scss
+
+341:         line-height: 1.25;
+342:         letter-spacing: -.1rem;
+343:       }  //.company_title
+344:     
+345:       .company_title
+346:         width: 100%;
+347:         box-sizing: border-box;
+348:         margin-bottom: 2.5rem;
+349:         border-collapse: collapse;
+350:         border-spacing: 0;
+351:     }
+
+Backtrace:
+sample.scss:346
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:665:in `block'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:658:in `ruleset'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:125:in `stylesheet'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:41:in `parse'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:384:in `_render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:301:in `render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:294:in `watch'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/plugin.rb:109:in `method_missing'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.25/bin/sass:13:in `<top (required)>'
+/usr/local/rvm/gems/ruby-2.3.0/bin/sass:23:in `load'
+/usr/local/rvm/gems/ruby-2.3.0/bin/sass:23:in `<main>'
+/usr/local/rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+/usr/local/rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...    width: 100%\": expected \"{\", was \";\"\A         on line 346 of sample.scss\A \A 341:         line-height: 1.25;\A 342:         letter-spacing: -.1rem;\A 343:       }  //.company_title\A 344:     \A 345:       .company_title\A 346:         width: 100%;\A 347:         box-sizing: border-box;\A 348:         margin-bottom: 2.5rem;\A 349:         border-collapse: collapse;\A 350:         border-spacing: 0;\A 351:     }"; }
