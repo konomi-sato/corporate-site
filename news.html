@@ -46,7 +46,7 @@
       <div class="six columns logo">
       <!--"memo" .one〜.twelveまでのコラム数を指定するclassと、.column、.columnsのどちらかの２つがセット-->
 
-       <img class="u-max-full-width" src="images/top/logo.png" alt="株式会社サンプル" srcset="images/top/logo@2x.png 2x" />
+      <h1><a href="index.html"><img class="u-max-full-width" src="images/top/logo.png" alt="株式会社サンプル" srcset="images/top/logo@2x.png 2x" /></a></h1>
       <!--"memo" .u-max-full-widthは、Skeleton独自のユーティリティークラス-->
 
       </div>
@@ -54,7 +54,7 @@
 
         <!--div.sp_navi 部分は、スマホ表示の時のみ使用する部分-->
         <div class="sp_navi">
-          <h1><a href="index.html"><img class="u-max-full-width" src="images/top/logo.png" alt="株式会社サンプル" srcset="images/top/logo@2x.png 2x" /></a></h1>
+          <img id="sp_navi_btn" class="u-max-full-width" src="images/top/sp_navi.png" alt="sp_navi" srcset="images/top/sp_navi@2x.png 2x" />
 
           <ul class="sp_navi_li">
             <li><a href="index.html">TOPページ</a></li>
@@ -203,6 +203,22 @@
 </footer>
 <!-- //footer -->
 
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!--jQueryのライブラリを読み込む-->
+
+<!--Toggleアニメーションの指示-->
+<script>
+  $(function(){
+    $(document).ready(function(){
+
+      $("#sp_navi_btn").click(function () { /*--#sp_navi_btnをクリックした時」という出現タイミングを指定--*/
+        $(this).next().slideToggle(); /*--#sp_navi_btnの「次」の要素（=ul.sp_navi_li）をトグルアニメーションさせるという指示--*/
+      });
+
+    });
+  });
+</script>
+ 
 
 </body>
 </html>
