@@ -53,14 +53,14 @@ header{
 
       list-style: none;
       margin: 0;
-      padding:0;
+      padding:0
 
       a{
         display: block;    //.sp_navi_li > li > a タグに対してdisplay: block;を設定
         padding: 10px 8px;
         border-bottom: 1px solid #eee;
         font-size: 14px;
-        text-decoration: none;
+        text-decoration: no
       }
     }
   }
@@ -206,7 +206,9 @@ header{
     background-size: cover;    //背景いっぱいに画像を敷き詰めたいときに便利な指定方法
 
   @media (min-width: 550px){
+    #sub_cover{
     padding: 80px 0;
+}
 }
   
 @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
@@ -294,14 +296,16 @@ h2 {
 
 #contents{
 padding-top: 20px;
+}
 
 @media (min-width: 550px){
 #contents {
     padding-top: 35px;
     padding-bottom: 70px;
-  }
+}
 }//min-width: 550px
 
+#contents{
 .container {
     position: relative;
     width: 100%;
@@ -374,8 +378,8 @@ padding-top: 20px;
       .news_li {
         font-size: 1.5rem;
         margin-bottom: 2.5rem;
+        list-style: none;
           .li{
-              list-style: none;
               margin-bottom: 1rem;
               display: list-item;
               text-align: -webkit-match-parent;
@@ -398,6 +402,7 @@ padding-top: 20px;
               color: #42b9d0;
               display: block;
               font-weight: bold;
+              display: inline-block;
               margin-bottom: 3px;
               text-align: -webkit-match-parent;
             }  //span
@@ -420,19 +425,28 @@ padding-top: 20px;
       line-height: 1.25;
       letter-spacing: -.1rem;
     }  //  .company_title
-    
-    .news_li{
-    .li {
-    list-style: none;
-    padding-bottom: 5px;
+}  //#main
+}  //min-width: 550px
+
+
+  @media (min-width: 550px){
+#contents {
+  #main{ 
+    .news_li{ 
+       list-style: none;
+        li {
+    padding-bottom: 5px;  
     margin-bottom: 1rem;
     display: list-item;
     text-align: -webkit-match-parent;
     font-size: 1.5rem;
     }  //li
-    }  //.news_li    
-}  //#main
-}  //min-width: 550px
+    }  //.news_li  
+  } //#main
+}
+} //min-width: 550px
+
+}  // #contents
 
 #sidebar {
     padding-bottom: 20px;
@@ -509,9 +523,6 @@ h3 {
   
   
 
-
-}  // #contents
-
 #news_area{
 
   background-color:$gray_blue;
@@ -548,8 +559,7 @@ h3 {
         display: block;    //メディアクエリでの設定なしの状態で、display:block;を追加し、自動改行を行っている
         margin-bottom: 3px;
       }
-    }
-    // li
+    }// li
   }
   // .news_lists
 
@@ -563,6 +573,7 @@ h3 {
     .news_lists{
 
       li{
+      
         @include fontsize(14);
         margin-bottom: 20px;
 
